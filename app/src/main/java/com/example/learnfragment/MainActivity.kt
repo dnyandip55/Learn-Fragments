@@ -31,4 +31,20 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragmentContainerView,RecyclerFragment())
             .commit()
     }
+
+    fun fragmentCommunication(view: View) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragmentContainerView,InputFragment())
+            .commit()
+    }
+
+    override fun onBackPressed() {
+        if(supportFragmentManager.backStackEntryCount>0){
+            supportFragmentManager.popBackStack()
+        }else{
+            super.onBackPressed()
+        }
+
+    }
 }

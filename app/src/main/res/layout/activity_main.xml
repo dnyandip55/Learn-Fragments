@@ -29,6 +29,13 @@
         android:layout_width="match_parent"
         android:text="Load teams"
         />
+    <Button
+        android:onClick="fragmentCommunication"
+        android:id="@+id/fragCommunication"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Fragment Communication"
+        />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
